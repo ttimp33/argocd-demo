@@ -1,0 +1,8 @@
+namespace: 
+  name: test
+
+image:
+  repository: ttimp33/python-helloworld
+  tag: latest
+
+replicaCount: 3
