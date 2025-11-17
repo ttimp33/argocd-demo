@@ -4,9 +4,9 @@ metadata:
   labels:
     app: python-helloworld
   name: python-helloworld
-  namespace: {{ .Values.namespace.name }}
-spec: 
-  replicas: {{ .Values.replicaCount }}
+  namespace: {{ .Values.namespace.name }} 
+spec:
+  replicas: {{ .Values.replicaCount }} 
   selector:
     matchLabels:
       app: python-helloworld
@@ -19,8 +19,8 @@ spec:
     metadata:
       labels:
         app: python-helloworld
-    spec: 
+    spec:
       containers:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-      imagePullPolicy: IfNotPresent
-      name: python-helloworld
+        imagePullPolicy: IfNotPresent 
+        name: python-helloworld
