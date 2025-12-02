@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sk-testing-service
+  namespace: {{ .Values.namespace.name }}
+  labels:
+    app: sk-testing
+spec:
+  # Use ClusterIP for internal communication, as we will use port-forwarding to access it externally.
+  type: ClusterIP
+  selector:
+    app: sk-testing # Matches 'app: sk-testing' label on Deployment pods
+  ports:
+    - name: http
+      protocol: TCP
+      port: 9999 # The port the Service exposes (making this really high)
+      targetPort: 3000 # The port the container is listening on
