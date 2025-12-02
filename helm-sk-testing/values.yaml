@@ -1,0 +1,8 @@
+namespace: 
+  name: sk
+
+image:
+  repository: ttimp33/sk-testing
+  tag: latest
+
+replicaCount: 2

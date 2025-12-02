@@ -1,0 +1,11 @@
+apiVersion: v1
+name: sk-testing
+description: Install a SvelteKit deployment
+keywords:
+- SvelteKit
+- sk-testing
+version: 1.0.0
+maintainers:
+- name: ttimp33
+  email: ttimp33@xyz.com
+  
