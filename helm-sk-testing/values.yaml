@@ -1,5 +1,5 @@
 namespace: 
-  name: sk
+  name: traefik
 
 image:
   repository: ttimp33/sk-testing

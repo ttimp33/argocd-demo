@@ -13,5 +13,5 @@ spec:
   ports:
     - name: http
       protocol: TCP
-      port: 9999 # The port the Service exposes (making this really high)
+      port: 80 # The port the Service exposes (making this really high)
       targetPort: 3000 # The port the container is listening on
